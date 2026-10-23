@@ -1,0 +1,17 @@
+# Ambiente virtual Python
+env/
+.venv/
+venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+
+# Arquivos de configuração local
+.env
+
+# Dados extraídos
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
