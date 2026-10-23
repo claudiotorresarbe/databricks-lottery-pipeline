@@ -17,9 +17,9 @@ def gravar_json(filename, data):
         json.dump(data, f, indent=4, ensure_ascii=False)
 
 def ler_json(filename):
-    with open(filename,'r',encoding='utf-8') as f:
-        file = json.loads(f.read())
-        return file
+    with open(filename, "r", encoding="utf-8") as arquivo:
+        dados = json.load(arquivo)
+        return dados
 
 def list_to_text(data,caracter=';'):
     return f'{caracter}'.join([x for x in data])
