@@ -9,9 +9,3 @@ __pycache__/
 
 # Arquivos de configuração local
 .env
-
-# Dados extraídos
-data/raw/*
-data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
