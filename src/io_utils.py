@@ -2,6 +2,12 @@ import os
 import json
 import shutil
 
+def file_exists(filename):
+    if os.path.exists(filename):
+        return 1
+    else:
+        return 0
+
 def grava_csv(filename,row):
     with open(filename,'a+') as f:
         f.write(row) 
